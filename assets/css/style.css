@@ -1,0 +1,431 @@
+
+/* ICON */
+
+.material-symbols-outlined.md-24 {
+    font-size: 24px;
+  }
+  
+  .material-symbols-outlined.md-36 {
+    font-size: 36px;
+  }
+  
+  .material-symbols-outlined.md-48 {
+    font-size: 48px;
+  }
+  
+  .material-symbols-outlined.md-150 {
+    font-size: 150px;
+  }
+  
+  body {
+    background: #f0f2f5;
+  }
+  
+  header{
+    background: #5F30E2;
+      padding: 16px;
+      color: white;
+  }
+  
+  .logo {
+    font-size: 5em;
+    font-weight: 700;
+    text-align: center;
+    margin: 30px;
+  }
+  
+  /* INPUT */
+  .input {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .input-unread,
+  .input-read,
+  .input-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 0 10px #0000001A;
+    width: 25%;
+    height: 100px;
+    border-radius: 20px;
+  }
+  
+  .input-unread {
+    margin: 30px 15px 15px 30px;
+  }
+  
+  .input-read {
+    margin: 30px 15px;
+  }
+  
+  .input-add {
+    margin: 30px 30px 15px 15px;
+  }
+  
+  .input-content {
+    display: flex;
+    flex-direction: column;
+  }
+  #totalUnreadBook{
+    font-size: larger;
+  }
+  #totalReadBook{
+    font-size: larger;
+  }
+  
+  .input-read-btn,
+  .input-unread-btn,
+  .input-add-btn {
+    width: 55px;
+    height: 55px;
+    border: none;
+    outline: none;
+    background-color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-right: 20px;
+  }
+  
+  .input-read-btn {
+    background-color: #4fa9d2;
+  }
+  
+  .input-unread-btn {
+    background-color: #f0dd5d;
+  }
+  
+  .input-add-btn {
+    background-color: #81bf97;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .input {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .input-unread,
+    .input-read,
+    .input-add {
+      width: 80%;
+    }
+  
+    .input-unread {
+      margin: 30px 0 15px 0;
+    }
+  
+    .input-read {
+      margin: 15px 0;
+    }
+  
+    .input-add {
+      margin: 15px 0 30px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .input {
+      flex-direction: column;
+    }
+  
+    .input-unread,
+    .input-read,
+    .input-add {
+      width: 80%;
+    }
+  
+    .input-unread {
+      margin: 30px 0 15px 0;
+    }
+  
+    .input-read {
+      margin: 15px 0;
+    }
+  
+    .input-add {
+      margin: 15px 0 15px;
+    }
+  }
+  
+  /* OVERLAY FORM */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #bf7b7b72;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  #closeForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    background-color: #f91d00;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 35%;
+    background: #F5F1FF;
+      border: 2px solid #9475EA;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #0000001A;
+    margin: auto;
+  }
+  
+  @media screen and (max-width: 992px) {
+    .close-btn {
+      top: 15px;
+      right: 15px;
+    }
+  
+    .input-form {
+      width: 80%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .close-btn {
+      top: 15px;
+      right: 15px;
+    }
+  
+    .input-form {
+      width: 80%;
+    }
+  }
+  
+  .input-form h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 20px 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+  }
+  
+  form input {
+    width: 100%;
+    height: 65px;
+    border: none;
+    outline: none;
+    border: 1px solid #dddfe2;
+    border-radius: 20px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 0 20px;
+  }
+  
+  .input-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .input-inline input {
+    width: 4.5%;
+    height: 100%;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+  }
+  
+  form button {
+    border: none;
+    outline: none;
+    background-color: #3c07f9;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 10px 0 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: white;
+  }
+  
+  form button:hover {
+    background-color: #5df060;
+    color: black;
+  
+  }
+  
+  /* CONTENT */
+  
+  #content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .bookshelf-unread,
+  .bookshelf-read {
+    background-color: white;
+    box-shadow: 0 0 10px #0000001A;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 80%;
+  }
+  
+  .bookshelf-unread {
+    margin: 0 auto 0;
+  }
+  
+  .bookshelf-read {
+    margin: 30px auto 30px;
+  }
+  
+  @media screen and (max-width: 992px) {
+  
+    .bookshelf-unread,
+    .bookshelf-read {
+      align-items: center;
+    }
+  
+    .book-list {
+      justify-content: center;
+    }
+  
+  }
+  
+  @media screen and (max-width: 600px) {
+    #content {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+  
+    .bookshelf-unread,
+    .bookshelf-read {
+      width: 80%;
+      margin: 20px;
+    }
+  
+    .book-list {
+      justify-content: center;
+    }
+  
+  }
+  
+  .bookshelf-unread h2,
+  .bookshelf-read h2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 30px;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+    width: 100%;
+  }
+  
+  .book {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 30px;
+    width: 200px;
+    border-radius: 10px;
+    background-color: white;
+  }
+  
+  .book-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 15px;
+    overflow: hidden;
+  }
+  
+  .book-img img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+  }
+  
+  .book-img:hover img {
+    transform: scale(1.2);
+  }
+  
+  .book-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 10px 0 30px;
+  }
+  
+  .book-content h3,
+  .book-content p {
+    margin-bottom: 5px;
+    margin-left: 5px;
+  }
+  
+  .book-action {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .unread-btn,
+  .read-btn {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 45px;
+    border-radius: 10px;
+  }
+  
+  .unread-btn {
+    background-color: #f0dd5d;
+  }
+  
+  .read-btn {
+    background-color: #4fa9d2;
+  }
+  
+  .remove-btn {
+    background-color: #df6756;
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
